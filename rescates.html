@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Rescate y Adopción | Rescates y Adopción</title>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Registro de Rescates y Estado de Adopción</h1>
+      <p>Consulta de casos atendidos, seguimiento actual y disponibilidad para adopción</p>
+    </div>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar rescate</a></li>
+        <li><a href="rescates.html" aria-current="page">Rescates y adopción</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="tabla-rescates">
+      <h2 id="tabla-rescates">Casos registrados</h2>
+
+      <table>
+        <caption>Listado de animales rescatados y estado actual del proceso</caption>
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nombre / Identificador</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Fecha de ingreso</th>
+            <th scope="col">Zona</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>RSC-001</td>
+            <td>Canela</td>
+            <td>Perro</td>
+            <td>2026-10-12</td>
+            <td>Zona norte</td>
+            <td>En adopción</td>
+          </tr>
+          <tr>
+            <td>RSC-002</td>
+            <td>Milo</td>
+            <td>Gato</td>
+            <td>2026-10-18</td>
+            <td>Sector central</td>
+            <td>En recuperación</td>
+          </tr>
+          <tr>
+            <td>RSC-003</td>
+            <td>Lúa</td>
+            <td>Perro</td>
+            <td>2026-10-25</td>
+            <td>Barrio La Paz</td>
+            <td>Adoptado</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="resumen-adopcion">
+      <h2 id="resumen-adopcion">Criterios de estado</h2>
+      <ul>
+        <li><strong>En recuperación:</strong> requiere control veterinario o estabilización inicial.</li>
+        <li><strong>En adopción:</strong> apto para iniciar proceso de evaluación de familia adoptante.</li>
+        <li><strong>Adoptado:</strong> proceso completado y registrado en seguimiento.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Sistema de Control de Rescate y Adopción — <a href="reportar.html">Registrar un nuevo caso</a>.</p>
+  </footer>
+</body>
+</html>

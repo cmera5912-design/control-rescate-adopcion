@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Rescate y Adopción | Reportar Rescate</title>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Reportar un Caso de Rescate</h1>
+      <p>Complete los datos obligatorios para registrar el avistamiento o solicitud de rescate</p>
+    </div>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html" aria-current="page">Reportar rescate</a></li>
+        <li><a href="rescates.html">Rescates y adopción</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="titulo-formulario">
+      <h2 id="titulo-formulario">Formulario de registro de rescate</h2>
+
+      <form action="rescates.html" method="get">
+        <fieldset>
+          <legend>Datos del reportante</legend>
+
+          <div>
+            <label for="nombre-reportante">Nombre completo *</label>
+            <input
+              type="text"
+              id="nombre-reportante"
+              name="nombre_reportante"
+              required
+              minlength="3"
+              maxlength="80"
+              placeholder="Ej. María Gómez"
+            >
+          </div>
+
+          <div>
+            <label for="correo-reportante">Correo electrónico *</label>
+            <input
+              type="email"
+              id="correo-reportante"
+              name="correo_reportante"
+              required
+              maxlength="100"
+              placeholder="correo@ejemplo.com"
+            >
+          </div>
+
+          <div>
+            <label for="telefono-reportante">Teléfono de contacto *</label>
+            <input
+              type="tel"
+              id="telefono-reportante"
+              name="telefono_reportante"
+              required
+              pattern="[0-9+\-\s]{7,15}"
+              placeholder="Ej. 0999999999"
+            >
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Información del animal y ubicación</legend>
+
+          <div>
+            <label for="tipo-animal">Tipo de animal *</label>
+            <select id="tipo-animal" name="tipo_animal" required>
+              <option value="">Seleccione una opción</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+              <option value="otro">Otro animal doméstico</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="fecha-reporte">Fecha del reporte *</label>
+            <input type="date" id="fecha-reporte" name="fecha_reporte" required>
+          </div>
+
+          <div>
+            <label for="ubicacion">Sector o dirección del rescate *</label>
+            <input
+              type="text"
+              id="ubicacion"
+              name="ubicacion"
+              required
+              minlength="4"
+              maxlength="120"
+              placeholder="Ej. Sector centro, calle principal"
+            >
+          </div>
+
+          <div>
+            <label for="condicion">Estado observado y detalles *</label>
+            <textarea
+              id="condicion"
+              name="condicion"
+              rows="4"
+              required
+              minlength="10"
+              maxlength="400"
+              placeholder="Describa brevemente el estado del animal y la situación"
+            ></textarea>
+          </div>
+
+          <div>
+            <input type="checkbox" id="confirmacion-datos" name="confirmacion_datos" required>
+            <label for="confirmacion-datos">Confirmo que la información proporcionada es verídica *</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <button type="submit">Enviar reporte</button>
+          <button type="reset">Limpiar campos</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Sistema de Control de Rescate y Adopción — Formulario con validación HTML5.</p>
+  </footer>
+</body>
+</html>
